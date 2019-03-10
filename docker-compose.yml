@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  no-iprefresh:
+    image: no-iprefresh
+    build: .
+    ports:
+      - 3000:3000
