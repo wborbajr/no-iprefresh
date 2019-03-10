@@ -9,10 +9,11 @@ FROM python:alpine
 #FROM continuumio/miniconda3
 
 LABEL Name=no-iprefresh Version=0.0.1
-EXPOSE 3000
+#EXPOSE 3000
+#ENV LISTEN_PORT=3000
 
 WORKDIR /app
-ADD . /app
+ADD app /app
 
 # Using pip:
 #RUN python3 -m pip install -r requirements.txt
